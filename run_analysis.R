@@ -1,20 +1,5 @@
-## create directory
-if(!file.exists("data")) {
-  dir.create("data")
-}
-
-## load file + unzip
-zipFileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(zipFileUrl, destfile = "./data/projetDataSet.zip", method = "curl")
-unzip("./data/projetDataSet.zip", exdir = "./data")
-
-## clean memory
-rm(list=ls())
-
 ## 1.  Merges the training and the test sets to create one data set.
-subDir <- "./data/UCI HAR Dataset"
-
-## Load features and activity labels
+subDir <- "."
 features <- read.table(file= paste(subDir, "features.txt", sep= "/"), header=F, stringsAsFactors=F)
 names(features) <- c("index","feature")
 
@@ -74,4 +59,5 @@ extractDT %>%
   group_by(activity,subjectId) %>%
   summarise_each(funs(mean)) -> meanVariablesByActivityAndSubject
 
+## Output
 write.table(meanVariablesByActivityAndSubject, file= "./mean_variables_by_activity_and_subject.txt", row.name=FALSE)

@@ -23,87 +23,92 @@ The output file generated be the run_analysis.R script is txt file. The first li
 * tBodyAcc-mean()-Y : same as above but on the Y axis.
 * tBodyAcc-mean()-Z : same as above but on the Z axis.
 
-* tBodyAcc-std()-X : standard deviation of the signal recorded to build the variable tBodyAcc-mean()-X. Data has been averaged over window period for each activity and each subject.
+* tBodyAcc-std()-X : Standard deviation of the signal recorded to build the variable tBodyAcc-mean()-X. Data has been averaged over window period for each activity and each subject.
 * tBodyAcc-std()-Y : same as above but on the Y axis.
 * tBodyAcc-std()-Z : same as above but on the Z axis.
 
-* tGravityAcc-mean()-X :
-* tGravityAcc-mean()-Y :
-* tGravityAcc-mean()-Z :
+* tGravityAcc-mean()-X : The gravity acceleration signal from the smartphone accelerometer X axis. Data has been averaged over window period for each activity and each subject. It is expressed in standard gravity units 'g'.
+* tGravityAcc-mean()-Y : same as above but on the Y axis.
+* tGravityAcc-mean()-Z : same as above but on the Z axis.
 
-* tGravityAcc-std()-X :
-* tGravityAcc-std()-Y :
-* tGravityAcc-std()-Z :
+* tGravityAcc-std()-X : Standard deviation of the signal recorded to build the variable tGravityAcc-mean()-X. Data has been averaged over window period for each activity and each subject.
+* tGravityAcc-std()-Y : same as above but on the Y axis.
+* tGravityAcc-std()-Z : same as above but on the Z axis.
 
-* tBodyAccJerk-mean()-X :
-* tBodyAccJerk-mean()-Y :
-* tBodyAccJerk-mean()-Z :
+* tBodyAccJerk-mean()-X : Jerk signal computed using tBodyAcc-X variable. Data has been averaged over window period for each activity and each subject. It is expressed in standard gravity units 'g'.
+* tBodyAccJerk-mean()-Y : same as above but on the Y axis.
+* tBodyAccJerk-mean()-Z : same as above but on the Z axis.
 
-* tBodyAccJerk-std()-X :
-* tBodyAccJerk-std()-Y :
-* tBodyAccJerk-std()-Z :
+* tBodyAccJerk-std()-X : Standard deviation of the signal recorded to build the variable tBodyAccJerk-mean()-X. Data has been averaged over window period for each activity and each subject.
+* tBodyAccJerk-std()-Y : same as above but on the Y axis.
+* tBodyAccJerk-std()-Z : same as above but on the Z axis.
 
-* tBodyGyro-mean()-X :         
-* tBodyGyro-mean()-Y :
-* tBodyGyro-mean()-Z :
+* tBodyGyro-mean()-X : The angular velocity vector measured by the gyroscope on the X-axis. The units are radians/second. Data has been averaged over window period for each activity and each subject.
+* tBodyGyro-mean()-Y : same as above but on the Y axis.
+* tBodyGyro-mean()-Z : same as above but on the Z axis.
 
-* tBodyGyro-std()-X :
-* tBodyGyro-std()-Y :
-* tBodyGyro-std()-Z :
+* tBodyGyro-std()-X : Standard deviation of the signal recorded to build the variable tBodyGyro-mean()-X. Data has been averaged over window period for each activity and each subject.
+* tBodyGyro-std()-Y : same as above but on the Y axis.
+* tBodyGyro-std()-Z : same as above but on the Z axis.
 
-* tBodyGyroJerk-mean()-X :     
-* tBodyGyroJerk-mean()-Y :
-* tBodyGyroJerk-mean()-Z :
-* tBodyGyroJerk-std()-X :
-* tBodyGyroJerk-std()-Y :
-* tBodyGyroJerk-std()-Z :
+* tBodyGyroJerk-mean()-X : Jerk signal computed using tBodyGyro-X variable. Data has been averaged over window period for each activity and each subject. It is expressed in radians/second.
+* tBodyGyroJerk-mean()-Y : same as above but on the Y axis.
+* tBodyGyroJerk-mean()-Z : same as above but on the Z axis.
 
-* tBodyAccMag-mean() :         
-* tBodyAccMag-std() :
-* tGravityAccMag-mean() :
-* tGravityAccMag-std() :
+* tBodyGyroJerk-std()-X : Standard deviation of the signal recorded to build the variable tBodyGyroJerk-mean()-X. Data has been averaged over window period for each activity and each subject.
+* tBodyGyroJerk-std()-Y : same as above but on the Y axis.
+* tBodyGyroJerk-std()-Z : same as above but on the Z axis.
 
-* tBodyAccJerkMag-mean() :
-* tBodyAccJerkMag-std() :
+* tBodyAccMag-mean() : Mag signal computed over tBodyAcc variable expressed in standard gravity units. Data has been averaged over window period for each activity and each subject.
+* tBodyAccMag-std() : Standard deviation computed on previous signal expressed in standard gravity units.
 
-* tBodyGyroMag-mean() :        
-* tBodyGyroMag-std() :
+* tGravityAccMag-mean() : Mag signal computed over tGravityAcc variable expressed in standard gravity units. Data has been averaged over window period for each activity and each subject.
+* tGravityAccMag-std() : Standard deviation computed on previous signal expressed in standard gravity units.
 
-* tBodyGyroJerkMag-mean() :
-* tBodyGyroJerkMag-std() :     
+* tBodyAccJerkMag-mean() : Jerk Mag signal computed over tBodyAcc variable expressed in standard gravity units. Data has been averaged over window period for each activity and each subject.
+* tBodyAccJerkMag-std() : Standard deviation computed on previous signal expressed in standard gravity units.
 
-* fBodyAcc-mean()-X :
-* fBodyAcc-mean()-Y :
-* fBodyAcc-mean()-Z :
-* fBodyAcc-std()-X :
-* fBodyAcc-std()-Y :
-* fBodyAcc-std()-Z :
+* tBodyGyroMag-mean() : Mag signal computed over tBodyGyro variable expressed in radians/second. Data has been averaged over window period for each activity and each subject.   
+* tBodyGyroMag-std() : Standard deviation computed on previous signal expressed in radians/second.
 
-* fBodyAccJerk-mean()-X :
-* fBodyAccJerk-mean()-Y :
-* fBodyAccJerk-mean()-Z :
-* fBodyAccJerk-std()-X :
-* fBodyAccJerk-std()-Y :        
-* fBodyAccJerk-std()-Z :
+* tBodyGyroJerkMag-mean() : Jerk Mag signal computed over tBodyGyro variable expressed in radians/second. Data has been averaged over window period for each activity and each subject.
+* tBodyGyroJerkMag-std() : Standard deviation computed on previous signal expressed in radians/second.
 
-* fBodyGyro-mean()-X :          
-* fBodyGyro-mean()-Y :
-* fBodyGyro-mean()-Z :
-* fBodyGyro-std()-X :
-* fBodyGyro-std()-Y :
-* fBodyGyro-std()-Z :
+* fBodyAcc-mean()-X : frequency variable equivalent to tBodyAcc-mean()-X.
+* fBodyAcc-mean()-Y : frequency variable equivalent to tBodyAcc-mean()-Y.
+* fBodyAcc-mean()-Z : frequency variable equivalent to tBodyAcc-mean()-Z.
 
-* fBodyAccMag-mean() :
-* fBodyAccMag-std() :
+* fBodyAcc-std()-X : frequency variable equivalent to tBodyAcc-std()-X.
+* fBodyAcc-std()-Y : frequency variable equivalent to tBodyAcc-std()-Y.
+* fBodyAcc-std()-Z : frequency variable equivalent to tBodyAcc-std()-Z.
 
-* fBodyBodyAccJerkMag-mean() :
-* fBodyBodyAccJerkMag-std() :
+* fBodyAccJerk-mean()-X : frequency variable equivalent to tBodyAccJerk-mean()-X.
+* fBodyAccJerk-mean()-Y : frequency variable equivalent to tBodyAccJerk-mean()-Y.
+* fBodyAccJerk-mean()-Z : frequency variable equivalent to tBodyAccJerk-mean()-Z.
 
-* fBodyBodyGyroMag-mean() :
-* fBodyBodyGyroMag-std() :
+* fBodyAccJerk-std()-X : frequency variable equivalent to tBodyAccJerk-std()-X.
+* fBodyAccJerk-std()-Y : frequency variable equivalent to tBodyAccJerk-std()-Y.
+* fBodyAccJerk-std()-Z : frequency variable equivalent to tBodyAccJerk-std()-Z.
 
-* fBodyBodyGyroJerkMag-mean() :
-* fBodyBodyGyroJerkMag-std() : 
+* fBodyGyro-mean()-X : frequency variable equivalent to tBodyGyro-mean()-X.
+* fBodyGyro-mean()-Y : frequency variable equivalent to tBodyGyro-mean()-Y.
+* fBodyGyro-mean()-Z : frequency variable equivalent to tBodyGyro-mean()-Z.
+
+* fBodyGyro-std()-X : frequency variable equivalent to tBodyGyro-std()-X.
+* fBodyGyro-std()-Y : frequency variable equivalent to tBodyGyro-std()-Y.
+* fBodyGyro-std()-Z : frequency variable equivalent to tBodyGyro-std()-Z.
+
+* fBodyAccMag-mean() : frequency variable equivalent to tBodyAccMag-mean().
+* fBodyAccMag-std() : frequency variable equivalent to tBodyAccMag-mean().
+
+* fBodyBodyAccJerkMag-mean() : frequency variable equivalent to tBodyBodyAccJerkMag-mean().
+* fBodyBodyAccJerkMag-std() : frequency variable equivalent to tBodyBodyAccJerkMag-std().
+
+* fBodyBodyGyroMag-mean() : frequency variable equivalent to tBodyBodyGyroMag-mean().
+* fBodyBodyGyroMag-std() : frequency variable equivalent to tBodyBodyGyroMag-std().
+
+* fBodyBodyGyroJerkMag-mean() : frequency variable equivalent to tBodyBodyGyroJerkMag-mean().
+* fBodyBodyGyroJerkMag-std() : frequency variable equivalent to tBodyBodyGyroJerkMag-std().
 
 ### Script requirments
 
@@ -111,3 +116,14 @@ The script contained in the file run_analysis.R is designed to be saved in the m
 
 ### Data transformation applied through the script
 
+The script run_analysis.R performs the following steps :
+
+1. It extracts features names from the features.txt file and the activity labels from the activity_labels.txt file. 
+
+2. It merges the 'training' and the 'test' sets to create one single data set. Data included in the Inertial Signals sub folder were excluded from the scope. Subject ids and activity labels are merged with numerical data frame.
+
+3. It filters the measurment lists using keywords "mean()" and "std()" to only extract measurements on the mean and standard deviation. 
+
+4. It uses descriptive activity names stored in the file activity_labels to name the activities in the data set. Features names are also used to name the columns of the data set.
+
+5. From the data set created during the first four steps, the script creates a second set with the average of each variable kept in the first set grouped by activity and subject.

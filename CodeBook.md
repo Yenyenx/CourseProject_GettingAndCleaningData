@@ -122,7 +122,7 @@ The script run_analysis.R performs the following steps :
 
 2. It merges the 'training' and the 'test' sets to create one single data set. Data included in the Inertial Signals sub folder were excluded from the scope. Subject ids and activity labels are merged with numerical data frame.
 
-3. It filters the measurment lists using keywords "mean()" and "std()" to only extract measurements on the mean and standard deviation. 
+3. It filters the measurment lists using keywords "-mean()" and "-std()" to only extract measurements on the mean and standard deviation. 
 
 4. It uses descriptive activity names stored in the file activity_labels to name the activities in the data set. Features names are also used to name the columns of the data set.
 
